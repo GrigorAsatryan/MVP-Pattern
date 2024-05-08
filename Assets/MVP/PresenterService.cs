@@ -2,9 +2,9 @@
 using UnityEngine;
 
 public class PresenterService : MonoBehaviour{
-    [SerializeField] private BasePresenter[] _baseUIViewPresenters;
+    [SerializeField] private UIViewBasePresenter[] _baseUIViewPresenters;
 
-    public void Show<TViewPresenter>() where TViewPresenter : BasePresenter
+    public void Show<TViewPresenter>() where TViewPresenter : UIViewBasePresenter
     {
         var presenter = Array.Find(_baseUIViewPresenters, presenter =>
          presenter.GetType().IsAssignableFrom(typeof(TViewPresenter)));

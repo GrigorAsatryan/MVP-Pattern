@@ -13,6 +13,6 @@ public abstract class BaseUIViewPresenterInstaller<TModel> : BasePresenterInstal
         Container
          .Bind<TModel>()
          .AsCached()
-         .WhenInjectedInto<BasePresenter>();
+         .WhenInjectedInto<UIViewBasePresenter>();
     }
 }

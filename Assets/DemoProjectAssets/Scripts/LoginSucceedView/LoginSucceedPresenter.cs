@@ -1,5 +1,5 @@
 
-public class LoginSucceedPresenter : BaseUIPresenterTView<ViewBase>{
+public class LoginSucceedPresenter : BaseUIViewPresenter<ViewBase>{
    
 
 }

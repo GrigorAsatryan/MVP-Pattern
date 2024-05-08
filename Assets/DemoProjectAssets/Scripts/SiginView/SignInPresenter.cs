@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SignInPresenter : BaseUIPresenterWithModel<SignInView,SignInModel>
+public class SignInPresenter : BaseUIViewPresenterWithModel<SignInView,SignInModel>
 {
     private void Awake(){
         _view.OnSignInClicked += SignIn;
